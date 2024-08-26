@@ -153,6 +153,12 @@ export default {
 						_disabled: false
 					},
 					{
+						name: '王武11',
+						code: '144',
+						_checked: false,
+						_disabled: false
+					},
+					{
 						name: '找刘',
 						code: '125',
 						_checked: false,

@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" @click="open">
+    <Team ref="teamRef" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Team from './ModalTeam.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Team
+  },
+  methods: {
+    open() {
+      this.$refs.teamRef.init()
+    }
   }
 }
 </script>
